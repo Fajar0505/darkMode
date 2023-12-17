@@ -1,0 +1,36 @@
+// Mixin Files
+@import "../Mixins/projectMixins.scss";
+
+#certificateSection {
+    .certificate {
+        div.wrapper {
+            display: block;
+            height: 100%;
+            transition: all 0.4s;
+            .card {
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                img {
+                    height: 100%;
+                    object-fit: fill;
+                }
+                .btn {
+                    @include buttonStyle;
+                }
+                div.imageOverlay {
+                    @include imageOverlay;
+                }
+            }    
+        }
+        div.wrapper:hover {
+            cursor: pointer;
+            .btn {
+                opacity: 1;
+            }
+            div.imageOverlay {
+                opacity: 1;
+            }  
+        }
+    }
+}
