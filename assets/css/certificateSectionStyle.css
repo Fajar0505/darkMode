@@ -1,0 +1,50 @@
+#certificateSection .certificate div.wrapper {
+  display: block;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+#certificateSection .certificate div.wrapper .card {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#certificateSection .certificate div.wrapper .card img {
+  height: 100%;
+  object-fit: fill;
+}
+
+#certificateSection .certificate div.wrapper .card .btn {
+  z-index: 10;
+  position: absolute;
+  padding: 10px 55px;
+  text-transform: uppercase;
+  font-family: Alatsi, sans-serif;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+#certificateSection .certificate div.wrapper .card div.imageOverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+#certificateSection .certificate div.wrapper:hover {
+  cursor: pointer;
+}
+
+#certificateSection .certificate div.wrapper:hover .btn {
+  opacity: 1;
+}
+
+#certificateSection .certificate div.wrapper:hover div.imageOverlay {
+  opacity: 1;
+}
+
+/* # sourceMappingURL=certificateSectionStyle.css.map */
+
